@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Starbucks Website Landing Page</title>
+ <link rel="shortcut icon" type="image/x-icon" href="icon.jpg.png">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+ </head>
+<body>
+ <section>
+   <div class="circle"></div>
+   <header>
+    <a href="#"><img src="logo.jpg.png" class="logo"></a>
+     <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#delivery">Delivery</a></li>
+      <li><a href="#app">App</a></li>
+      <li><a href="#contact">Contact</a></li>
+     <ul>
+   </header>
+   <div class="content">
+    <div class="textBox">
+      <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+      <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. As the world's largest coffeehouse chain, Starbucks is seen to be the major representation of the United States' second wave of coffee culture</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="imgBox">
+        <img src="img1.jpg.png" class="starbucks">
+    </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="thumb1.jpg.png" onclick="imgSlider('img1.jpg.png');changeCircleColor('#017143')"></li>
+      <li><img src="thumb2.jpg.png" onclick="imgSlider('img2.jpg.png');changeCircleColor('#eb7495')"></li>
+      <li><img src="thumb3.jpg.png" onclick="imgSlider('img3.jpg.png');changeCircleColor('#d752b1')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="facebook.jpg.png"></a></li>
+      <li><a href="#"><img src="instagram.jpg.png"></a></li>
+      <li><a href="#"><img src="twitter.jpg.png"></a></li>
+    </ul>
+</section>
+<!-- Shop -->
+<section class="shop" id="shop">
+  <div class="heading">
+    <span>Shop Now</span>
+    <h1>Shop Coffee</h1>
+  </div>
+  <div class="shop-container">
+    <div class="box">
+      <div class="box-img">
+        <img src="shop1.jpg.png" alt="">
+      </div>
+      <h2>Starbucks Coffee</h2>
+      <span>$ 3.99</span>
+        <a href="#" class="btn">Order Now</a>
+    </div>
+
+    <div class="box">
+      <div class="box-img">
+        <img src="shop2.jpg.png" alt="">
+      </div>
+      <h2>Starbucks Coffee</h2>
+      <span>$ 3.99</span>
+        <a href="#" class="btn">Order Now</a>
+    </div>
+
+    <div class="box">
+      <div class="box-img">
+        <img src="shop3.jpg.png" alt="">
+      </div>
+      <h2>Starbucks Coffee</h2>
+      <span>$ 3.99</span>
+        <a href="#" class="btn">Order Now</a>
+    </div>
+  </div>
+</section>
+<!-- Delivery -->
+<section class="delivery" id="delivery">
+  <div class="heading">
+    <span>Get Now</span>
+    <h1>Order with Uber Eats</h1>
+  </div>
+  <div class="container">
+    <div class="delivery-img">
+      <img src="delivery.jpg.jpg" alt="">
+    </div>
+    <div class="delivery-text">
+      <h2>Today Deserve delivery</h2>
+      <p>Today might be one of those days that deserves delivery. Order Starbucks® Delivers on Uber Eats from your couch, in bed, on a walk or wherever. Open the Uber Eats app to find a Starbucks store that delivers near you.</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+  </div>
+</section>
+<!-- About -->
+  <section class="app" id="app">
+    <div class="heading">
+      <span>Our App</span>
+      <h1>Download App</h1>
+    </div>
+    <div class="container">
+
+      <div class="app-text">
+        <h2>Fall into an easier routine</h2>
+        <p>Say hello to one of the easiest ways to get your order. Open the app, join Starbucks® Rewards, order and pay. We’ll tell you how long until your order is ready and let you save your favorites for next time.</p>
+        <a href="#" class="btn">Get App</a>
+      </div>
+        <div class="app-img">
+          <img src="app.jpg.jpg" alt="">
+        </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About</h2>
+      </div>
+      <div class="container">
+
+      <div class="about-img">
+        <img src="about.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <h2>50 years of serving communities</h2>
+        <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. As the world's largest coffeehouse chain, Starbucks is seen to be the major representation of the United States' second wave of coffee culture.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Term Of use</a>
+      <a href="#">Our Company</a>
+    </div>
+    <p>&#169; Copyright All Right Reserved</p>
+  </section>
+
+
+<script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.starbucks').src = anything;
+  }
+
+  function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+  }
+
+</script>
+
+  <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+</body>
+</html>
